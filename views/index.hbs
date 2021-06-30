@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=".\stylesheets\style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=".\javascripts\script.js"></script>
+    <script src=".\javascripts\table-sort.js"></script>
+</head>
+<body>
+
+<h1>Welcome to AmazWeb</h1>
+<h2>Product List</h2>
+<div>
+  <b>Search:</b> <input id="myInput" type="text" placeholder="Enter Keyword...">
+</div>
+<div>
+  <table class="table-sort" id="myTable">
+      <thead>
+        <tr>
+            <th>Product Name &#8597;</th>
+            <th>Price &#8597;</th>
+            <th>Image</th>
+        </tr>
+      </thead>
+    <tbody id="productTable">
+        {{#each items}}
+        <tr>
+            <td>{{ this.name }}</td>
+            <td>{{ this.price }}</td>
+            <td>
+                <a href="{{ this.img }}">
+                    <img src="./images/{{this.title}}" alt="{{this.title}}" border="1" height="80" width="80" />
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
