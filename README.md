@@ -1,6 +1,6 @@
 # AmazWeb
 
-A mini website which is built with JavaScript( NodeJS Environment ). ExpressJS framework and MongoDB database is used to build this application.
+A mini website which is built with JavaScript( NodeJS Environment ). ExpressJS framework and MongoDB database are used to build this application.
 
 1. Responsive UI
 2. Framework (ExpressJS)
